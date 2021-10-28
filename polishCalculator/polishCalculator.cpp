@@ -51,6 +51,7 @@ void inputFromPrompt()
     }
     for (int i = 0; i < save.size(); i++)
     {
+        //cout<<save[i]<<endl;
         get_command(save[i]);
     }
 }
@@ -59,8 +60,8 @@ void inputFromPrompt()
 void instructions()
 {
     cout << "The valid commands are:" << endl
-        << "[?]push to stack   [=]print top" << endl
-        << "[+] [-] [*] [/]   are arithmetic operations" << endl
+        << "[=]print top" << endl
+        << "[+] [_] [*] [/]   are arithmetic operations" << endl
         << "[x] to switch top 2 entries      [s] to add all elements in the stack" << endl
         << "[a] average of the sum      [%] to calculate remainder "<<endl
         << "[^] Raise to power      [v] Square root     [Q]uit." << endl;
